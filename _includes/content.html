@@ -1,0 +1,22 @@
+<div id="content">
+  <h2>Content</h2>
+
+  <div class="table-responsive-vertical shadow-z-1">
+    <table class="table table-hover table-mc-light-blue">
+      <thead>
+        <tr>
+        <th class="text-center">Media</th>
+        <th class="text-center">Quantity</th>
+        </tr>
+      </thead>
+      <tbody class="table-hover">
+        {% for c in site.data.content %}
+        <tr>
+          <td class="text-center">{{ c.type }}</td>
+          <td class="text-center">{{ c.quantity }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>

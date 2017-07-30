@@ -1,0 +1,44 @@
+header {
+  margin: 1.5rem 0;
+
+  a {
+    &:hover, &:visited, &:active, &:link {
+      text-decoration: none;
+    }
+  }
+  
+  #logo {
+    display: inline-block;
+    
+    a {
+      display: table;
+      
+      > * {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      
+      h1 {
+        font-family: 'VT323', cursive;
+        color: #212121;
+        font-size: 38px;
+        margin: 0;
+        line-height: normal;
+        padding: 0 0 5px 5px;
+      }
+      
+      img {
+        max-width: 42px;
+      }
+    }
+  }
+  
+  .progress {
+    margin-top: 11px;
+  }
+  
+  #subscribe {
+    display: inline-block;
+    width: 147px;
+  }
+}

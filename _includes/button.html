@@ -1,0 +1,20 @@
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_s-xclick">
+  <input type="hidden" name="hosted_button_id" value="W3WEKW2JM62C6">
+  <input type="hidden" name="on1" value="Reddit username" class="form-control">
+  <input type="hidden" name="on0" value="Plex username">
+  
+  {% assign fg = 'reddit_username' %}
+  <div class="form-group">
+    <label for="{{ fg }}">Reddit username</label>
+    <input type="text" name="os0" id="{{ fg }}" placeholder="Reddit username" class="form-control" maxlength="200">
+  </div>
+  
+  {% assign fg = 'plex_username' %}
+  <div class="form-group">
+    <label for="{{ fg }}">Plex username</label>
+    <input type="text" name="os1" id="{{ fg }}" placeholder="Plex username" class="form-control" maxlength="200">
+  </div>
+  
+  <button type="submit" class="btn btn-default">Start Trial</button>
+</form>

@@ -1,0 +1,34 @@
+#genres {
+  font-size: 36px;
+  line-height: normal;
+  
+  ul {
+    padding: 0;
+    font-family: 'Crimson Text', serif;
+    display: block;
+    width: 100%;
+  }
+  ul:hover li:before, ul:hover li:after {
+    color: $green;
+  }
+  ul li {
+    display: inline;
+  }
+  ul li:after {
+    content: ", ";
+  }
+  ul li:nth-last-child(2):after {
+    content: " and ";
+  }
+  ul li:last-child:after {
+    content: ".";
+  }
+}
+
+a {
+  color: $blue;
+}
+
+.progress-bar-success {
+  background-color: $green;
+}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Crimson+Text|VT323|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Crimson+Text|Lato:300');
+
+
+$black: #121212;
+$blue: #6cc0e5;
+$darkblue: #345678;
+$darkgrey: #212121;
+$green: #5bcf94;
+$grey: #f4f4f4;
+$lightred: #fb4f4f;
+$offwhite:   #fafafa;
+$red: #CC443D;
+$white:   #ffffff;
+$yellow: #fbc93d;
+$awesome-emerald: #00A388;
+$awesome-skyblue: #0395DE;
+$awesome-red: #DC3522;
+$awesome-pink: #EF4089;
+$awesome-orange: #FF6138;
+$awesome-nephritis: #27AE60;
+$awesome-concrete: #95A5A6;
+$awesome-darknight: #131A28;
+
+html {
+  position: relative;
+  overflow-x: hidden;
+  margin: 16px;
+  padding: 0;
+  min-height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $black;
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.01rem;
+  color: #212121;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+nav {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 42px;
+  color: #696969;
+  font-weight: 300;
+}
+
+@import "table";
+@import "header";
+@import "genres";
+@import "home";

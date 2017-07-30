@@ -1,0 +1,8 @@
+title: plexhaven
+email: plexhaven@gmail.com
+baseurl: "/"
+# url: "http://plexhaven.github.io"
+url: "http://localhost:4000"
+markdown: kramdown
+theme: minima
+flipmail: sESFh1SqK3B7UE3EE1Uu

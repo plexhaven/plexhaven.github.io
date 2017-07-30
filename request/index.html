@@ -1,0 +1,39 @@
+---
+layout: default
+title: request
+navigation_weight: 4
+---
+<form action="//flipmail.co/api/{{ site.flipmail }}" method="post" accept-charset="UTF-8">
+  <input type="hidden" name="_subject" value="Contact">
+  <input type="hidden" name="_after" value="/thanks">
+  <input type="text" name="_honey" value="" style="display:none">
+
+  {% assign fg = 'email' %}
+  <div class="form-group">
+    <label for="{{ fg }}">{{ fg | capitalize }}</label>
+    <input type="text" name="_replyto" id="{{ fg }}" placeholder="{{ fg | capitalize }}" class="form-control">
+  </div>
+  
+  {% assign fg = 'title' %}
+  <div class="form-group">
+    <label for="{{ fg }}">{{ fg | capitalize }}</label>
+    <input type="text" name="_replyto" id="{{ fg }}" placeholder="{{ fg | capitalize }}" class="form-control">
+  </div>
+  
+  <div class="form-group">
+    <label for="format_input">Format:</label>
+    <select class="form-control" id="format_input">
+      {% for f in site.data.formats %}
+      <option>{{ f }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  
+  <div class="form-group">
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Disable fallback</label>
+    </div>
+  </div>
+  
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>

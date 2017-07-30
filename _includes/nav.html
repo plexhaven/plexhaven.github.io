@@ -1,0 +1,12 @@
+<nav>
+  <ul class="nav nav-tabs">
+    {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+    {% for p in navigation_pages %}
+      {% if p.navigation_weight %}
+        <li role="presentation" {% if p.url == page.url %}class="active"{% endif %}>
+          <a href="{{ p.url }}">{{ p.title | capitalize }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>

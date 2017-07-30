@@ -1,0 +1,10 @@
+- attribute: CPU(s)
+  value: 2 x Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
+- attribute: Cores
+  value: 48
+- attribute: Location
+  value: Amsterdam
+- attribute: Connection
+  value: 10Gbps
+- attribute: Content
+  value: 65TB

@@ -1,0 +1,28 @@
+---
+layout: default
+title: contact
+navigation_weight: 3
+---
+<form action="//flipmail.co/api/{{ site.flipmail }}" method="post" accept-charset="UTF-8">
+  <input type="hidden" name="_subject" value="Contact">
+  <input type="hidden" name="_after" value="/thanks">
+  <input type="text" name="_honey" value="" style="display:none">
+
+  {% assign fg = 'email' %}
+  <div class="form-group">
+    <label for="{{ fg }}">{{ fg | capitalize }}</label>
+    <input type="text" name="_replyto" id="{{ fg }}" placeholder="{{ fg | capitalize }}" class="form-control">
+  </div>
+  
+  {% assign fg = 'message' %}
+  <div class="form-group">
+    <label for="{{ fg }}">{{ fg | capitalize }}</label>
+    <textarea class="form-control" rows="8" id="{{ fg }}" placeholder="{{ fg | capitalize }}" name="{{ fg }}"></textarea>
+  </div>
+  
+  <div class="form-group">
+    <input type="file" name="file">
+  </div> 
+  
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
