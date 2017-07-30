@@ -5,3 +5,4 @@ url: "http://plexhaven.github.io"
 markdown: kramdown
 theme: minima
 flipmail: sESFh1SqK3B7UE3EE1Uu
+dev: false
